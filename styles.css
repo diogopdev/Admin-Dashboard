@@ -10,36 +10,6 @@ body {
 	grid-template-rows: 1fr 4fr;
 }
 
-ul {
-	padding-left: 40px;
-}
-
-ul li {
-	list-style-type: none;
-	font-weight: 700;
-	margin-bottom: 0.8rem;
-}
-
-ul li img {
-	height: 2rem;
-	margin-right: 1rem;
-	cursor: pointer;
-}
-
-ul li img:hover ~ p {
-	border-bottom: 1px solid;
-}
-
-ul li p {
-	cursor: pointer;
-	margin: 0;
-}
-
-ul li p:hover {
-	border-bottom: 1px solid;
-}
-
-
 /* HEADER ------------------------------------------ */
 
 .header{
@@ -48,7 +18,87 @@ ul li p:hover {
 	z-index: 10;
 	box-shadow: 1px 1px 10px #777676;
 	background-color: white;
-	padding: 20px;
+	padding: 5px 40px 20px 40px;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.header-icons {
+	height: 1.8rem;
+}
+
+/* search bar ------------ */
+
+.search-bar{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.search-bar img {
+	margin-right: 1rem;
+}
+
+.search-bar input {
+	width: 80%;
+	height: 1.8rem;
+	border-radius: 1rem;
+	border: none;
+	background-color: #d4d6d6;
+	padding: 0 10px 0 10px;
+	box-shadow: inset 1px 1px 10px #777676;
+}
+
+/* profile ------------ */
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.profile-pic {
+	height: 3rem;
+}
+
+/* welcome ------------ */
+
+.welcome{
+	margin-top: .5rem;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 5rem 2fr;
+	gap: 2rem;
+}
+
+.welcome-img{
+	height: 5rem;
+}
+
+.welcome-text p,
+.welcome-text h2{
+	margin: 0;
+}
+
+/* post ------------ */
+
+.post{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:2rem;
+	align-items: center;
+}
+
+.post button {
+	cursor: pointer;
+	background-color: #84cc16;
+	color: white;
+	border: none;
+	border-radius: 2rem;
+	height: 2.3rem;
 }
 
 /* SIDEBAR ------------------------------------------ */
@@ -72,7 +122,7 @@ ul li p:hover {
 	align-items: center;
 	font-size: 1.2rem;
 	height: 4rem;
-	padding: 30px;
+	padding: 20px 0 20px 30px;
 }
 
 .logo img {
@@ -82,6 +132,35 @@ ul li p:hover {
 .logo h3 {
 	display: inline;
 	cursor: default;
+}
+
+.sidebar ul {
+	padding-left: 40px;
+}
+
+.sidebar ul li {
+	list-style-type: none;
+	font-weight: 700;
+	margin-bottom: 0.8rem;
+}
+
+.sidebar ul li img {
+	height: 2rem;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.sidebar ul li img:hover ~ p {
+	border-bottom: 1px solid;
+}
+
+.sidebar ul li p {
+	cursor: pointer;
+	margin: 0;
+}
+
+.sidebar ul li p:hover {
+	border-bottom: 1px solid;
 }
 
 .menu ul li {
